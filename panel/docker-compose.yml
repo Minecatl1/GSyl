@@ -4,8 +4,8 @@ x-common:
     &db-environment
     # Do not remove the "&db-password" from the end of the line below, it is important
     # for Panel functionality.
-    MYSQL_PASSWORD: &db-password "CHANGE_ME"
-    MYSQL_ROOT_PASSWORD: "CHANGE_ME_TOO"
+    MYSQL_PASSWORD: &db-password "Picnic03"
+    MYSQL_ROOT_PASSWORD: "Picnic03"
   panel:
     &panel-environment
     # This URL should be the URL that your reverse proxy routes to the panel server
@@ -16,7 +16,7 @@ x-common:
     TRUSTED_PROXIES: "*" # Set this to your proxy IP
     # Uncomment the line below and set to a non-empty value if you want to use Let's Encrypt
     # to generate an SSL certificate for the Panel.
-    # LE_EMAIL: ""
+    LE_EMAIL: "kland1120@outlook.com"
   mail:
     &mail-environment
     MAIL_FROM: "noreply@example.com"
